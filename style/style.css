@@ -1,0 +1,130 @@
+/* Importar la fuente Roboto para los títulos */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+/* Configuración general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Fondo color aqua suave */
+  color: #004d61; /* Texto color marino */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Títulos */
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #006064; /* Azul profundo */
+  text-align: center;
+}
+
+/* Menú lateral */
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #004d61;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+}
+
+.menu-item a {
+  color: #e0f7fa; /* Texto claro en el menú */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu-item a:hover {
+  color: #b2ebf2; /* Efecto hover */
+}
+
+/* Sección principal */
+section {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* Tarjeta central para el contenido */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* Enlaces internos de la sección */
+section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+section ul .menu-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+section ul .menu-item a {
+  color: #004d61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section ul .menu-item a:hover {
+  color: #00796b;
+}
+
+/* Párrafos */
+p {
+  color: #004d61;
+  line-height: 1.6;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  aside {
+    width: 100px;
+  }
+
+  section {
+    margin-left: 120px;
+  }
+
+  div {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+.image-container {
+  width: 100%; /* Ajusta el contenedor de la imagen */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%; /* Hace que la imagen no se desborde del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
